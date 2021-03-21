@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Views.AboutPage"
+             xmlns:vm="clr-namespace:App2.ViewModels" xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             Title="{Binding Title}">
+
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView BackgroundColor="DarkSlateGray">
+        <StackLayout>
+            <Image Source="gifd.gif" IsAnimationPlaying="True"/>
+            <Image Source="grafic.gif" IsAnimationPlaying="True" Margin="0"/>
+            <Image Source="end.png" IsAnimationPlaying="True"/>
+            <StackLayout>
+                <Label Text="Спортзал находится здесь:" FontSize="20" HorizontalOptions="Center" TextColor="White"/>
+                <map:Map x:Name="map1" MapType="Street" HasZoomEnabled="True"  HeightRequest="300">
+                    <x:Arguments>
+                        <map:MapSpan>
+                            <x:Arguments>
+                                <map:Position>
+                                    <x:Arguments>
+                                        <x:Double>54.5178890583336</x:Double>
+                                        <x:Double>36.289046094124785</x:Double>
+                                    </x:Arguments>
+                                </map:Position>
+                                <x:Double>0.01</x:Double>
+                                <x:Double>0.01</x:Double>
+                            </x:Arguments>
+                        </map:MapSpan>
+                    </x:Arguments>
+                    <map:Map.Pins>
+                        <map:Pin Label="Santa Cruz"
+                       Address="The city with a boardwalk"
+                       Type="Place">
+                            <map:Pin.Position>
+                                <map:Position>
+                                    <x:Arguments>
+                                        <x:Double>54.5178890583336</x:Double>
+                                        <x:Double>36.289046094124785</x:Double>
+                                    </x:Arguments>
+                                </map:Position>
+                            </map:Pin.Position>
+                        </map:Pin>
+                    </map:Map.Pins>
+                </map:Map>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

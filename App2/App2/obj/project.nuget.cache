@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "QQJqWZWqlwxLhuWyvD5cu/qGQCDVcinCy6fqj0p09tXcdDpzvl1Khhc0j4Q4au+WtOCkhTaZpE5az6m0r2DQvw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dima\\source\\repos\\App2\\App2\\App2\\App2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dima\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Dima\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Dima\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512",
+    "C:\\Users\\Dima\\.nuget\\packages\\xamarin.forms.maps\\4.6.0.1141\\xamarin.forms.maps.4.6.0.1141.nupkg.sha512"
+  ],
+  "logs": []
+}
